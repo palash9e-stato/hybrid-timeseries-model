@@ -26,3 +26,4 @@ Results are displayed interactively with trend visualization.
 
 
 LINK- [bert-model](https://drive.google.com/file/d/1Oud9iu8TaAQ7ccFFx2S-tGwOcUqPeqLS/view?usp=drive_link)
+**some issues in dates could affect the ploty forcast**
