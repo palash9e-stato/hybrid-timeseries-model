@@ -1,0 +1,9 @@
+pandas
+yfinance
+prophet
+google-genai
+matplotlib
+feedparser
+python-dotenv
+streamlit
+plotly

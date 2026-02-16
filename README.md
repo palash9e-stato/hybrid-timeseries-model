@@ -1,30 +1,55 @@
-# hybrid-timeseries-model
+# Hybrid Stock Forecasting Dashboard 📈
 
-# Hybrid Time Series + Sentiment Forecasting
+A sophisticated forecasting tool combining historical data analysis (Prophet) with real-time news sentiment (Gemini AI) to predict stock prices. Now featuring enhanced visualizations including Candlestick charts, technical indicators, and volatility analysis.
 
-This project integrates Prophet (time series forecasting) and RoBERTa (sentiment analysis) to predict stock market trends with improved accuracy.
+## Features
 
-# Features
+*   **Hybrid Forecasting**: Blends time-series trends with AI-driven sentiment analysis.
+*   **Interactive Dashboard**: Built with Streamlit for a responsive user experience.
+*   **Advanced Charts**:
+    *   **Candlestick View**: Analyze OHLC data with zoom and pan capabilities.
+    *   **Technical Indicators**: Overlay SMA 50, SMA 200, Bollinger Bands, and RSI.
+    *   **Confidence Intervals**: Visualize model uncertainty.
+*   **Deep Insights**:
+    *   **Trend & Seasonality**: Decompose forecasts into global trends and seasonal patterns.
+    *   **Volatility Analysis**: Understand risk through daily return distributions.
+*   **AI Market Analyst**: Generates concise textual summaries of market conditions using Gemini.
 
-Prophet Model — Forecasts future stock values using historical data.
+## Installation
 
-RoBERTa Sentiment Model — Analyzes financial/news text to gauge market mood.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/hybrid-stock-forecaster.git
+    cd hybrid-stock-forecaster
+    ```
 
-Hybrid Fusion — Combines Prophet’s trend forecast with sentiment influence.
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Interactive Gradio Interface — Input market news and visualize hybrid predictions with interactive Plotly charts.
+3.  Set up environment variables:
+    Create a `.env` file in the root directory and add your Google Gemini API key:
+    ```
+    GEMNI_API_KEY_2=your_api_key_here
+    ```
 
-# Workflow
+## Usage
 
-Prophet predicts future stock prices based on the merged dataset.
+Run the dashboard:
+```bash
+streamlit run dashboard.py
+```
+Or if `streamlit` is not in your PATH:
+```bash
+python -m streamlit run dashboard.py
+```
 
-RoBERTa evaluates sentiment from text input.
+## Technologies Used
 
-A weighted fusion layer adjusts the forecast based on sentiment score.
-
-Results are displayed interactively with trend visualization.
-
-
-LINK- [bert-model](https://drive.google.com/file/d/1Oud9iu8TaAQ7ccFFx2S-tGwOcUqPeqLS/view?usp=drive_link)
-
-*some issues in dates could affect the ploty forcast*
+*   **Python**: Core language.
+*   **Streamlit**: Web framework.
+*   **Prophet**: Time-series forecasting.
+*   **Google Gemini (GenAI)**: Sentiment analysis and text generation.
+*   **Plotly**: Interactive visualizations.
+*   **yfinance**: Market data retrieval.
