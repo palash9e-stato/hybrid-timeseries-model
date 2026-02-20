@@ -1,4 +1,4 @@
-# Hybrid Stock Forecasting Dashboard 📈
+# Hybrid Time Sesries Model 
 
 A sophisticated forecasting tool combining historical data analysis (Prophet) with real-time news sentiment (Gemini AI) to predict stock prices. Now featuring enhanced visualizations including Candlestick charts, technical indicators, and volatility analysis.
 
@@ -19,8 +19,8 @@ A sophisticated forecasting tool combining historical data analysis (Prophet) wi
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/hybrid-stock-forecaster.git
-    cd hybrid-stock-forecaster
+    git clone https://github.com/palash9e-stato/hybrid-timeseries-model.git
+    cd hybrid-timeseries-model
     ```
 
 2.  Install dependencies:
@@ -53,3 +53,4 @@ python -m streamlit run dashboard.py
 *   **Google Gemini (GenAI)**: Sentiment analysis and text generation.
 *   **Plotly**: Interactive visualizations.
 *   **yfinance**: Market data retrieval.
+
